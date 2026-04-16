@@ -3,10 +3,10 @@
 Welcome — this site documents both the RuneLite plugin and the Home Assistant integration that work together to sync OSRS data to Home Assistant.
 
 - Home Assistant integration: 
-  - Docs: [/integration](/integration)
+  - Docs: [/integration](/integration/index)
   - Repository: [https://github.com/db1996/homeassistant_runelite](https://github.com/db1996/homeassistant_runelite)
 - RuneLite plugin:
-  - Docs: [/runelite-plugin](/runelite-plugin)
+  - Docs: [/runelite-plugin](/runelite-plugin/index)
   - Repository: [https://github.com/db1996/homeassistant](https://github.com/db1996/homeassistant)
 
 ## Install RuneLite plugin

@@ -60,5 +60,5 @@ I have built a custom runelite plugin to automatically update these entities. It
 
 It can be found on the plugin hub named "Homeassistant", or check the [repository](https://github.com/db1996/homeassistant).
 
-Find docs about configuration options [here](/runelite-plugin)
+Find docs about configuration options [here](/runelite-plugin/index)
 

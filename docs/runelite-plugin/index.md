@@ -21,4 +21,4 @@ See the [Options](/runelite-plugin/options) page for all available plugin settin
 
 The plugin emits events and batches entity updates which the integration consumes.
 
-See the [integration](/integration) docs for more information about how to use these events/entities.
+See the [integration](/integration/index) docs for more information about how to use these events/entities.

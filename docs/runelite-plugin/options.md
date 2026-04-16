@@ -29,14 +29,14 @@
 
 ## Events
 
-| Name                     | Type    | Default | Description                         | Related docs                                                                   |
-| ------------------------ | ------- | ------- | ----------------------------------- | ------------------------------------------------------------------------------ |
-| Collection log events    | boolean | `true`  | Sends collection log events         | [/integration/events/collection-log](/integration/events/collection-log)       |
-| Combat task events       | boolean | `true`  | Sends combat task events            | [/integration/events/combat-task](/integration/events/combat-task)             |
-| Achievement diary events | boolean | `true`  | Sends achievement diary events      | [/integration/events/achievement-diary](/integration/events/achievement-diary) |
-| Idle events              | boolean | `true`  | Sends idle events                   | [/integration/events/idle](/integration/events/idle)                           |
-| Idle delay (ticks)       | int     | `50`    | Delay before idle triggers          | [/integration/events/idle](/integration/events/idle)                           |
-| Watch VarBit ID          | String  | `""`    | Comma-separated VarBit IDs to watch | [/integration/events/varbit-change](/integration/events/varbit-change)         |
+| Name                     | Type    | Default | Description                         | Related docs                                                                       |
+| ------------------------ | ------- | ------- | ----------------------------------- | ---------------------------------------------------------------------------------- |
+| Collection log events    | boolean | `true`  | Sends collection log events         | [/integration/triggers/collection-log](/integration/triggers/collection-log)       |
+| Combat task events       | boolean | `true`  | Sends combat task events            | [/integration/triggers/combat-task](/integration/triggers/combat-task)             |
+| Achievement diary events | boolean | `true`  | Sends achievement diary events      | [/integration/triggers/achievement-diary](/integration/triggers/achievement-diary) |
+| Idle events              | boolean | `true`  | Sends idle events                   | [/integration/triggers/idle](/integration/triggers/idle)                           |
+| Idle delay (ticks)       | int     | `50`    | Delay before idle triggers          | [/integration/triggers/idle](/integration/triggers/idle)                           |
+| Watch VarBit ID          | String  | `""`    | Comma-separated VarBit IDs to watch | [/integration/triggers/varbit-change](/integration/triggers/varbit-change)         |
 
 ## Miscellaneous
 
@@ -50,9 +50,9 @@
 
 ## Debug
 
-| Name                           | Type    | Default | Description                     | Related docs                                                         |
-| ------------------------------ | ------- | ------- | ------------------------------- | -------------------------------------------------------------------- |
-| Test clog event                | boolean | `false` | Sends test collection log event | [/integration/services/triggers](/integration/services/triggers)     |
-| Test combat task event         | boolean | `false` | Sends test combat task event    | [/integration/services/triggers](/integration/services/triggers)     |
-| Test achievement diary event   | boolean | `false` | Sends test diary event          | [/integration/services/triggers](/integration/services/triggers)     |
-| Show aggression area and timer | boolean | `false` | Shows aggression tiles overlay  | [/integration/entities/aggression](/integration/entities/aggression) |
+| Name                           | Type    | Default | Description                     | Related docs                                                                           |
+| ------------------------------ | ------- | ------- | ------------------------------- | -------------------------------------------------------------------------------------- |
+| Test clog event                | boolean | `false` | Sends test collection log event | [/integration/services/test-event-triggers](/integration/services/test-event-triggers) |
+| Test combat task event         | boolean | `false` | Sends test combat task event    | [/integration/services/test-event-triggers](/integration/services/test-event-triggers) |
+| Test achievement diary event   | boolean | `false` | Sends test diary event          | [/integration/services/test-event-triggers](/integration/services/test-event-triggers) |
+| Show aggression area and timer | boolean | `false` | Shows aggression tiles overlay  | [/integration/entities/aggression](/integration/entities/aggression)                   |
