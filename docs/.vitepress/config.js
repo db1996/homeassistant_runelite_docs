@@ -107,11 +107,6 @@ export default {
       '/runelite-plugin/': [
         { text: 'RuneLite plugin', link: '/runelite-plugin/' },
         { text: 'Options', link: '/runelite-plugin/options' }
-      ],
-
-      '/': [
-        { text: 'Introduction', link: '/' },
-        { text: 'Installation', link: '/installation' }
       ]
     }
   }
