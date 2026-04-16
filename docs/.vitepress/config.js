@@ -1,6 +1,7 @@
 export default {
   title: 'Homeassistant Runelite',
   description: 'Docs for the RuneLite plugin and Home Assistant integration',
+  base: '/homeassistant_runelite_docs/',
   themeConfig: {
     nav: [
       { text: 'Introduction', link: '/' },
