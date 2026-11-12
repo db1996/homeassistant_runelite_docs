@@ -1,16 +1,17 @@
-# Idle Notify
+# Idle & Active Notify
 
-Event:
+Events:
 
-`runelite_idle_notify`
+- `runelite_idle_notify`: the player has been idle for the configured number of ticks
+- `runelite_active_notify`: the player is active again after being idle
 
-Triggered when the player is idle for a configurable time.
+⚙️ Requires **Idle events** in the RuneLite plugin settings. **Idle delay (ticks)** sets how long you have to be idle.
 
 ---
 
 ## Attributes
 
-None
+- `idle_ticks`: how many game ticks the player has been idle (or was idle, for the active event)
 
 ---
 

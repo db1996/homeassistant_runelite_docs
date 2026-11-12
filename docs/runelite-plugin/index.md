@@ -2,7 +2,7 @@
 
 This section documents the RuneLite plugin: installation, configuration options, and how the plugin maps to Home Assistant services and events.
 
-The plugin source lives in the workspace at `C:\Users\dylan\IdeaProjects\homeassistant`.
+The plugin source is on [GitHub](https://github.com/db1996/homeassistant).
 
 ## Installation
 

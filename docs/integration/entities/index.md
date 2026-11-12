@@ -10,11 +10,18 @@ Most entities follow this pattern:
 
 ## Categories
 
-- Farming & Birdhouses
+- Farming & Birdhouses (including the compost bin)
+- Farming tick offset
 - Skills
 - Activities
+- Current Activity
 - Dailies
 - Player Status
 - Status Effects
 - Aggression Timer
+- Slayer Task
+- Quests
+- Inventory & Equipment
 - Kingdom of Miscellania
+
+The integration also creates [event entities](/integration/triggers/#event-entities) for the plugin's events.

@@ -11,41 +11,51 @@
 
 ## Entities
 
-| Name                    | Type    | Default | Description                            | Related docs                                                                 |
-| ----------------------- | ------- | ------- | -------------------------------------- | ---------------------------------------------------------------------------- |
-| Farming patches         | boolean | `true`  | Updates farming patch entities         | [/integration/entities/farming](/integration/entities/farming)               |
-| Farming contract        | boolean | `true`  | Updates farming contract entity        | [/integration/entities/farming](/integration/entities/farming)               |
-| Bird houses             | boolean | `true`  | Updates birdhouse timers               | [/integration/entities/farming](/integration/entities/farming)               |
-| Dailies                 | boolean | `true`  | Updates daily activity entities        | [/integration/entities/dailies](/integration/entities/dailies)               |
-| Player online status    | boolean | `false` | Updates player online status and world | [/integration/entities/player-status](/integration/entities/player-status)   |
-| Player health           | boolean | `false` | Updates player health (high frequency) | [/integration/entities/player-status](/integration/entities/player-status)   |
-| Player prayer           | boolean | `false` | Updates player prayer (high frequency) | [/integration/entities/player-status](/integration/entities/player-status)   |
-| Player special attack % | boolean | `false` | Updates special attack                 | [/integration/entities/player-status](/integration/entities/player-status)   |
-| Player run energy %     | boolean | `false` | Updates run energy (high frequency)    | [/integration/entities/player-status](/integration/entities/player-status)   |
-| Player status effects   | boolean | `false` | Tracks poison/venom and future effects | [/integration/entities/status-effects](/integration/entities/status-effects) |
-| Aggression timer        | boolean | `false` | Updates aggression timer               | [/integration/entities/aggression](/integration/entities/aggression)         |
-| Skill Boosts            | boolean | `false` | Updates skill boosts                   | [/integration/entities/skills](/integration/entities/skills)                 |
-| Miscellania             | boolean | `true`  | Updates Miscellania coffer and approval | [/integration/entities/miscellania](/integration/entities/miscellania)       |
-| Miscellania coffer threshold | int | `0`   | Coffer amount to warn at. 0 = optimal (500k, or 750k after Royal Trouble) | [/integration/entities/miscellania](/integration/entities/miscellania) |
-| Miscellania approval threshold | int | `75` | Approval % to warn at                 | [/integration/entities/miscellania](/integration/entities/miscellania)       |
+| Name                           | Type    | Default | Description                                                                        | Related docs                                                                     |
+| ------------------------------ | ------- | ------- | ---------------------------------------------------------------------------------- | -------------------------------------------------------------------------------- |
+| Farming patches                | boolean | `true`  | Updates farming patch and compost bin entities                                     | [/integration/entities/farming](/integration/entities/farming)                   |
+| Farming contract               | boolean | `true`  | Updates farming contract entity                                                    | [/integration/entities/farming](/integration/entities/farming)                   |
+| Bird houses                    | boolean | `true`  | Updates birdhouse timers                                                           | [/integration/entities/farming](/integration/entities/farming)                   |
+| Dailies                        | boolean | `true`  | Updates daily activity entities                                                    | [/integration/entities/dailies](/integration/entities/dailies)                   |
+| Player online status           | boolean | `false` | Updates player online status and world                                             | [/integration/entities/player-status](/integration/entities/player-status)       |
+| Player health                  | boolean | `false` | Updates player health (high frequency)                                             | [/integration/entities/player-status](/integration/entities/player-status)       |
+| Player prayer                  | boolean | `false` | Updates player prayer (high frequency)                                             | [/integration/entities/player-status](/integration/entities/player-status)       |
+| Player special attack %        | boolean | `false` | Updates special attack                                                             | [/integration/entities/player-status](/integration/entities/player-status)       |
+| Player run energy %            | boolean | `false` | Updates run energy (high frequency)                                                | [/integration/entities/player-status](/integration/entities/player-status)       |
+| Player status effects          | boolean | `false` | Tracks poison/venom and future effects                                             | [/integration/entities/status-effects](/integration/entities/status-effects)     |
+| Aggression timer               | boolean | `false` | Updates aggression timer                                                           | [/integration/entities/aggression](/integration/entities/aggression)             |
+| Skill boosts                   | boolean | `false` | Updates boosted levels, including potions and debuffs                              | [/integration/entities/skills](/integration/entities/skills)                     |
+| Skill XP                       | boolean | `false` | Sends live XP per skill as it is gained, instead of waiting for the hiscores       | [/integration/entities/skills](/integration/entities/skills)                     |
+| Slayer task                    | boolean | `false` | Sends the current slayer task. Requires RuneLite's own Slayer plugin to be enabled | [/integration/entities/slayer-task](/integration/entities/slayer-task)           |
+| Quest progress                 | boolean | `false` | Sends the quest being worked on, with quest points and completion counts           | [/integration/entities/quests](/integration/entities/quests)                     |
+| Inventory                      | boolean | `false` | Sends the items in your inventory and how many slots are free                      | [/integration/entities/inventory](/integration/entities/inventory)               |
+| Equipment                      | boolean | `false` | Sends the items you are wearing, per equipment slot                                | [/integration/entities/inventory](/integration/entities/inventory)               |
+| Activity                       | boolean | `false` | Sends which skill you are working on, read from your animation                     | [/integration/entities/current-activity](/integration/entities/current-activity) |
+| Miscellania                    | boolean | `true`  | Updates Miscellania coffer and approval                                            | [/integration/entities/miscellania](/integration/entities/miscellania)           |
+| Miscellania coffer threshold   | int     | `0`     | Coffer amount to warn at. 0 = optimal (500k, or 750k after Royal Trouble)          | [/integration/entities/miscellania](/integration/entities/miscellania)           |
+| Miscellania approval threshold | int     | `75`    | Approval % to warn at                                                              | [/integration/entities/miscellania](/integration/entities/miscellania)           |
 
 
 ## Events
 
-| Name                     | Type    | Default | Description                         | Related docs                                                                       |
-| ------------------------ | ------- | ------- | ----------------------------------- | ---------------------------------------------------------------------------------- |
-| Collection log events    | boolean | `true`  | Sends collection log events         | [/integration/triggers/collection-log](/integration/triggers/collection-log)       |
-| Combat task events       | boolean | `true`  | Sends combat task events            | [/integration/triggers/combat-task](/integration/triggers/combat-task)             |
-| Achievement diary events | boolean | `true`  | Sends achievement diary events      | [/integration/triggers/achievement-diary](/integration/triggers/achievement-diary) |
-| Idle events              | boolean | `true`  | Sends idle events                   | [/integration/triggers/idle](/integration/triggers/idle)                           |
-| Idle delay (ticks)       | int     | `50`    | Delay before idle triggers          | [/integration/triggers/idle](/integration/triggers/idle)                           |
-| Watch VarBit ID          | String  | `""`    | Comma-separated VarBit IDs to watch | [/integration/triggers/varbit-change](/integration/triggers/varbit-change)         |
+| Name                        | Type    | Default | Description                                                     | Related docs                                                                       |
+| --------------------------- | ------- | ------- | --------------------------------------------------------------- | ---------------------------------------------------------------------------------- |
+| Collection log events       | boolean | `true`  | Sends collection log events                                     | [/integration/triggers/collection-log](/integration/triggers/collection-log)       |
+| Combat task events          | boolean | `true`  | Sends combat task events                                        | [/integration/triggers/combat-task](/integration/triggers/combat-task)             |
+| Achievement diary events    | boolean | `true`  | Sends achievement diary events                                  | [/integration/triggers/achievement-diary](/integration/triggers/achievement-diary) |
+| Quest complete events       | boolean | `false` | Sends an event when a quest is completed                        | [/integration/triggers/quest-complete](/integration/triggers/quest-complete)       |
+| Gem crab HP threshold event | boolean | `false` | Sends an event when the gem crab's HP drops below the threshold | [/integration/triggers/gem-crab](/integration/triggers/gem-crab)                   |
+| HP threshold %              | int     | `5`     | The gem crab HP percentage at which the event is sent           | [/integration/triggers/gem-crab](/integration/triggers/gem-crab)                   |
+| Gem crab can mine event     | boolean | `false` | Sends an event when the gem crab can be mined                   | [/integration/triggers/gem-crab](/integration/triggers/gem-crab)                   |
+| Idle events                 | boolean | `true`  | Sends events when you go idle and when you are active again     | [/integration/triggers/idle](/integration/triggers/idle)                           |
+| Idle delay (ticks)          | int     | `50`    | Delay before idle triggers                                      | [/integration/triggers/idle](/integration/triggers/idle)                           |
+| Watch VarBit ID             | String  | `""`    | Comma-separated VarBit IDs to watch                             | [/integration/triggers/varbit-change](/integration/triggers/varbit-change)         |
 
 ## Miscellaneous
 
 | Name                   | Type    | Default | Description                                                            | Related docs                                                         |
 | ---------------------- | ------- | ------- | ---------------------------------------------------------------------- | -------------------------------------------------------------------- |
-| Ignore Farming Guild   | boolean | `false` | Ignore Farming Guild patches                                           | [/integration/entities/farming](/integration/entities/farming)       |
+| Ignore Farming Guild   | boolean | `true`  | Ignore Farming Guild patches                                           | [/integration/entities/farming](/integration/entities/farming)       |
 | Farming tick offset    | boolean | `true`  | Automatically updates farming tick offset                              | [/integration/services/farming](/integration/services/farming)       |
 | Aggression timer delay | int     | `50`    | Delay between aggression updates                                       | [/integration/entities/aggression](/integration/entities/aggression) |
 | Global tick throttle   | int     | `0`     | Update every X ticks to homeassistant to reduce calls (0 = every tick) | -                                                                    |
@@ -53,9 +63,12 @@
 
 ## Debug
 
-| Name                           | Type    | Default | Description                     | Related docs                                                                           |
-| ------------------------------ | ------- | ------- | ------------------------------- | -------------------------------------------------------------------------------------- |
-| Test clog event                | boolean | `false` | Sends test collection log event | [/integration/services/test-event-triggers](/integration/services/test-event-triggers) |
-| Test combat task event         | boolean | `false` | Sends test combat task event    | [/integration/services/test-event-triggers](/integration/services/test-event-triggers) |
-| Test achievement diary event   | boolean | `false` | Sends test diary event          | [/integration/services/test-event-triggers](/integration/services/test-event-triggers) |
-| Show aggression area and timer | boolean | `false` | Shows aggression tiles overlay  | [/integration/entities/aggression](/integration/entities/aggression)                   |
+| Name                             | Type    | Default | Description                        | Related docs                                                                           |
+| -------------------------------- | ------- | ------- | ---------------------------------- | -------------------------------------------------------------------------------------- |
+| Test clog event                  | boolean | `false` | Sends test collection log event    | [/integration/services/test-event-triggers](/integration/services/test-event-triggers) |
+| Test combat task event           | boolean | `false` | Sends test combat task event       | [/integration/services/test-event-triggers](/integration/services/test-event-triggers) |
+| Test achievement diary event     | boolean | `false` | Sends test diary event             | [/integration/services/test-event-triggers](/integration/services/test-event-triggers) |
+| Test quest complete event        | boolean | `false` | Sends test quest complete event    | [/integration/services/test-event-triggers](/integration/services/test-event-triggers) |
+| Test gem crab HP threshold event | boolean | `false` | Sends test gem crab HP event       | [/integration/services/test-event-triggers](/integration/services/test-event-triggers) |
+| Test gem crab can mine event     | boolean | `false` | Sends test gem crab can mine event | [/integration/services/test-event-triggers](/integration/services/test-event-triggers) |
+| Show aggression area and timer   | boolean | `false` | Shows aggression tiles overlay     | [/integration/entities/aggression](/integration/entities/aggression)                   |

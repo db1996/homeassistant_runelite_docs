@@ -26,6 +26,10 @@ export default {
             },
             { text: 'Skills', link: '/integration/entities/skills' },
             { text: 'Activities', link: '/integration/entities/activities' },
+            {
+              text: 'Current Activity',
+              link: '/integration/entities/current-activity'
+            },
             { text: 'Dailies', link: '/integration/entities/dailies' },
             {
               text: 'Player Status',
@@ -38,6 +42,12 @@ export default {
             {
               text: 'Aggression Timer',
               link: '/integration/entities/aggression'
+            },
+            { text: 'Slayer Task', link: '/integration/entities/slayer-task' },
+            { text: 'Quests', link: '/integration/entities/quests' },
+            {
+              text: 'Inventory & Equipment',
+              link: '/integration/entities/inventory'
             },
             {
               text: 'Kingdom of Miscellania',
@@ -59,10 +69,15 @@ export default {
             },
             { text: 'Combat Task', link: '/integration/triggers/combat-task' },
             {
+              text: 'Quest Complete',
+              link: '/integration/triggers/quest-complete'
+            },
+            { text: 'Gem Crab', link: '/integration/triggers/gem-crab' },
+            {
               text: 'Varbit Change',
               link: '/integration/triggers/varbit-change'
             },
-            { text: 'Idle', link: '/integration/triggers/idle' }
+            { text: 'Idle & Active', link: '/integration/triggers/idle' }
           ]
         },
         {
@@ -79,6 +94,7 @@ export default {
               text: 'Kingdom of Miscellania',
               link: '/integration/services/miscellania'
             },
+            { text: 'Entity Data', link: '/integration/services/entity-data' },
             {
               text: 'Test Event Triggers',
               link: '/integration/services/test-event-triggers'

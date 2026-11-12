@@ -46,11 +46,66 @@ Service: `runelite.trigger_combat_task_notify`
 
 ---
 
+## trigger_quest_complete_notify
+
+Service: `runelite.trigger_quest_complete_notify`
+
+### Inputs
+
+| Input        | Info                                            |
+| ------------ | ----------------------------------------------- |
+| quest        | Name of the completed quest                     |
+| quest_points | Optional, quest point total after completing it |
+
+---
+
+## trigger_gem_crab_hp_notify
+
+Service: `runelite.trigger_gem_crab_hp_notify`
+
+### Inputs
+
+| Input      | Info                                     |
+| ---------- | ---------------------------------------- |
+| hp_percent | Optional, the crab's HP percentage       |
+| threshold  | Optional, the configured threshold       |
+| world      | Optional, the world the crab is on       |
+
+---
+
+## trigger_gem_crab_can_mine_notify
+
+Service: `runelite.trigger_gem_crab_can_mine_notify`
+
+### Inputs
+
+| Input | Info                               |
+| ----- | ---------------------------------- |
+| world | Optional, the world the crab is on |
+
+---
+
 ## trigger_idle_notify
 
 Service: `runelite.trigger_idle_notify`
 
-**No inputs**
+### Inputs
+
+| Input      | Info                                      |
+| ---------- | ----------------------------------------- |
+| idle_ticks | Optional, how many ticks you've been idle |
+
+---
+
+## trigger_active_notify
+
+Service: `runelite.trigger_active_notify`
+
+### Inputs
+
+| Input      | Info                                                  |
+| ---------- | ----------------------------------------------------- |
+| idle_ticks | Optional, how many ticks you were idle before this    |
 
 ---
 
