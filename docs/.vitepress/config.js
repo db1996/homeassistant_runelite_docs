@@ -38,6 +38,10 @@ export default {
             {
               text: 'Aggression Timer',
               link: '/integration/entities/aggression'
+            },
+            {
+              text: 'Kingdom of Miscellania',
+              link: '/integration/entities/miscellania'
             }
           ]
         },
@@ -71,6 +75,10 @@ export default {
               link: '/integration/services/shortcut-services'
             },
             { text: 'Dailies', link: '/integration/services/dailies' },
+            {
+              text: 'Kingdom of Miscellania',
+              link: '/integration/services/miscellania'
+            },
             {
               text: 'Test Event Triggers',
               link: '/integration/services/test-event-triggers'

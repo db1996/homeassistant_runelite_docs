@@ -25,6 +25,9 @@
 | Player status effects   | boolean | `false` | Tracks poison/venom and future effects | [/integration/entities/status-effects](/integration/entities/status-effects) |
 | Aggression timer        | boolean | `false` | Updates aggression timer               | [/integration/entities/aggression](/integration/entities/aggression)         |
 | Skill Boosts            | boolean | `false` | Updates skill boosts                   | [/integration/entities/skills](/integration/entities/skills)                 |
+| Miscellania             | boolean | `true`  | Updates Miscellania coffer and approval | [/integration/entities/miscellania](/integration/entities/miscellania)       |
+| Miscellania coffer threshold | int | `0`   | Coffer amount to warn at. 0 = optimal (500k, or 750k after Royal Trouble) | [/integration/entities/miscellania](/integration/entities/miscellania) |
+| Miscellania approval threshold | int | `75` | Approval % to warn at                 | [/integration/entities/miscellania](/integration/entities/miscellania)       |
 
 
 ## Events
