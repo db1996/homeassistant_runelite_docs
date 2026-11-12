@@ -56,7 +56,7 @@ Sets:
 | Input      | Info                                                                                                                                   |
 | ---------- | -------------------------------------------------------------------------------------------------------------------------------------- |
 | Username   | Optional, only used if you have more than one device added                                                                             |
-| Patch Type | `herb`, `hespori`, `tree`, `fruit_tree`,`cactus`, `hardwood`, `spirit_tree`, `allotment`,`bush`, `flower`, `mushroom`, `potato_cactus` |
+| Patch Type | `herb`, `hespori`, `anima`, `tree`, `fruit_tree`,`cactus`, `hardwood`, `spirit_tree`, `allotment`,`bush`, `flower`, `mushroom`, `potato_cactus` |
 | Crop Type  | If a crop type is provided for a different patch type than above, it overrides the patch type input                                    |
 
 ---

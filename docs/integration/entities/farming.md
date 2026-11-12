@@ -22,6 +22,7 @@ These entities track status, crop, and completion times for farming patches, far
 | sensor.runelite_%username_hardwood_patch      |
 | sensor.runelite_%username_redwood_patch       |
 | sensor.runelite_%username_hespori_patch       |
+| sensor.runelite_%username_anima_patch         |
 
 ## Attributes
 
